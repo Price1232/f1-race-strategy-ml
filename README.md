@@ -143,6 +143,26 @@ The simulator can be used to analyze:
 - race strategy comparisons
 
 ---
+## Model Performance
+
+The lap-time prediction model was trained using historical Formula 1 telemetry data.
+
+Model: Gradient Boosting Regressor  
+Training Data: FastF1 telemetry datasets  
+Train/Test Split: 80/20  
+
+Performance:
+
+MAE: **1.54 seconds**
+
+The model predicts lap times using features including:
+
+- Tyre life
+- Fuel load estimation
+- Compound type
+- Track temperature
+- Driver and team encoding
+- Circuit characteristics
 
 ## Future Work
 
